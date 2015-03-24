@@ -3,7 +3,6 @@
     "description": "PHP artisan example for Laravel",
     "keywords": ["laravel, example, artisan"],
     "license": "MIT",
-
     "authors": [
         {
             "name": "haubar",
@@ -20,13 +19,10 @@
         "php": ">=5.3.0",
         "artdarek/oauth-4-laravel": "*"
     },
-     "require-dev": {
-        "artdarek/oauth-4-laravel": "*"
-    },
     "autoload": {
         "psr-0": {
             "Ithome\\OAuthClient": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }
