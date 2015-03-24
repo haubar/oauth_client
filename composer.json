@@ -1,5 +1,5 @@
 {
-    "name": "haubar/laravel_artisan_example",
+    "name": "ithome/oauth_client",
     "description": "PHP artisan example for Laravel",
     "keywords": ["laravel, example, artisan"],
     "license": "MIT",
