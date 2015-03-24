@@ -21,12 +21,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Ithome\\OAuthClient": "src/"
+            "Ithome\\OAuthClient\\": "src/"
         }
     },
-    "autoload": {
+    "autoload-dev": {
         "psr-4": {
-            "Ithome\\OAuthClient": "src/"
+            "Ithome\\OAuthClient\\": "src/"
         }
     },
     "minimum-stability": "dev"
