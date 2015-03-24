@@ -17,9 +17,8 @@
      "require-dev": {
         "artdarek/oauth-4-laravel": "*"
     },
-    "require-all": true,
     "autoload": {
-        "psr-4": {
+        "psr-0": {
             "Ithome\\OAuthClient": "src/"
         }
     },
