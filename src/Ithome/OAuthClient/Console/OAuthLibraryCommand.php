@@ -22,7 +22,7 @@ class OAuthLibraryCommand extends Command
      *
      * @var string
      */
-    protected $name = 'oauth-client:library';
+    protected $name = 'oauth-client:library_create';
 
     /**
      * The console command description.
