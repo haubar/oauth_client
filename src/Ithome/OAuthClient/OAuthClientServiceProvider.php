@@ -10,6 +10,9 @@
 namespace Ithome\OAuthClient;
 
 use Illuminate\Support\ServiceProvider;
+use Ithome\OAuthClient\Console\ConsumerSettingCommand;
+use Ithome\OAuthClient\Console\MigrationsCommand;
+use Ithome\OAuthClient\Console\OAuthLibraryCommand;
 
 class OAuthClientServiceProvider extends ServiceProvider
 {
