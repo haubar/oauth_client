@@ -20,7 +20,12 @@
         "artdarek/oauth-4-laravel": "*"
     },
     "autoload": {
-        "psr-0": {
+        "psr-4": {
+            "Ithome\\OAuthClient": "src/"
+        }
+    },
+    "autoload": {
+        "psr-4": {
             "Ithome\\OAuthClient": "src/"
         }
     },
