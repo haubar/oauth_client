@@ -24,7 +24,7 @@ class OAuthClientServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->package('ithome/oauth-client');
+        $this->package('ithome/oauth-client', 'oauth-client', __DIR__.'/');
 
         // $this->bootFilters();
     }
