@@ -36,8 +36,8 @@ class ConsumerSettingCommand extends Command
      */
     public function fire()
     {
-        $clientId = $this->argument('client_id');
-        $clientSecret = $this->argument('client_secret');
+        $clientId = $this->argument('clientid');
+        $clientSecret = $this->argument('clientSecret');
 
         $this->clientRepo->create($clientId, $clientSecret);
         $this->info('Client created successfully');

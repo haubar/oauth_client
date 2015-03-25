@@ -40,7 +40,7 @@ class MigrationsCommand extends Command
      */
     public function fire()
     {
-        $this->call('migrate:publish', ['package' => 'ithome/oauth-client']);
+        $this->call('migrate:publish', ['package' => 'ithome/oauthclient']);
         $this->call('dump-autoload');
     }
 }
