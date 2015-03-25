@@ -32,8 +32,6 @@ class OAuthLibraryCommand extends Command
     /**
      * Create a new reminder table command instance.
      *
-     * @param  \Illuminate\Filesystem\Filesystem $files
-     * @return \LucaDegasperi\OAuth2Server\Console\OAuthControllerCommand
      */
     public function __construct(Filesystem $files)
     {
@@ -49,15 +47,15 @@ class OAuthLibraryCommand extends Command
      */
     public function fire()
     {
-        $destination = $this->laravel['vendor'].'/lusitanian/oauth/src/OAuth/OAuth2/Service/Ithome.php';
+        $destination = $this->laravel['path'].'/lusitanian/oauth/src/OAuth/OAuth2/Service/Ithome.php';
 
         if (!$this->files->exists($destination)) {
-            $this->files->copy(__DIR__.'/../../subs/ithome.php', $destination);
+            $this->files->copy(__DIR__.'/../subs/ithome.php', $destination);
 
             $this->info('Ithome OAuth Client Library created successfully!');
 
 
-            // $this->comment("Routes:");
+            $this->comment("KERKERKER......");
             // $this->comment("Route::post('oauth/access_token', 'OAuthController@postAccessToken');");
         }
         else {
