@@ -36,13 +36,17 @@ class ConsumerSettingCommand extends Command
      */
     public function fire()
     {
-        $clientId = $this->argument('clientid');
-        $clientSecret = $this->argument('clientSecret');
 
-        $this->clientRepo->create($clientId, $clientSecret);
-        $this->info('Client created successfully');
-        $this->info('Client ID: '.$clientId);
-        $this->info('Client Secret: '.$clientSecret);
+        $this->call('config:publish', ['package' => 'artdarek/oauth-4-laravel']);
+        $this->call('dump-autoload');
+        $this->info('The  config be create !!');
+        // $clientId = $this->argument('clientid');
+        // $clientSecret = $this->argument('clientSecret');
+
+        // $this->clientRepo->create($clientId, $clientSecret);
+        // $this->info('Client created successfully');
+        // $this->info('Client ID: '.$clientId);
+        // $this->info('Client Secret: '.$clientSecret);
     }
 
     /**
