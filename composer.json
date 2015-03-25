@@ -1,7 +1,7 @@
 {
     "name": "ithome/oauthclient",
     "description": "PHP artisan example for Laravel",
-    "keywords": ["laravel, example, artisan"],
+    "keywords": ["laravel, example, artisan, client"],
     "license": "MIT",
     "authors": [
         {
