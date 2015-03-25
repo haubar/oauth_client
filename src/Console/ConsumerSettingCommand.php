@@ -39,7 +39,7 @@ class ConsumerSettingCommand extends Command
 
         $this->call('config:publish', ['package' => 'artdarek/oauth-4-laravel']);
         $this->call('dump-autoload');
-        $this->info('The  config be create !!');
+        $this->info('The Base config be create !!');
         // $clientId = $this->argument('clientid');
         // $clientSecret = $this->argument('clientSecret');
 
