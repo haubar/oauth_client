@@ -50,7 +50,7 @@ class OAuthLibraryCommand extends Command
         $destination = $this->laravel['path'].'/lusitanian/oauth/src/OAuth/OAuth2/Service/Ithome.php';
 
         if (!$this->files->exists($destination)) {
-            $this->files->copy(__DIR__.'/../../subs/ithome.php', $destination);
+            $this->files->copy(__DIR__.'/../subs/ithome.php', $destination);
 
             $this->info('Ithome OAuth Client Library created successfully!');
 
