@@ -1,13 +1,4 @@
 <?php
-/**
- * Command to ease the creation of a sample Authorization Server controller
- *
- * @package   lucadegasperi/oauth2-server-laravel
- * @author    Luca Degasperi <luca@lucadegasperi.com>
- * @copyright Copyright (c) Luca Degasperi
- * @licence   http://mit-license.org/
- * @link      https://github.com/lucadegasperi/oauth2-server-laravel
- */
 
 namespace Ithome\OAuthClient\Console;
 

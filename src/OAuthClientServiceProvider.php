@@ -28,8 +28,6 @@ class OAuthClientServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->package('ithome/oauthclient', 'oauthclient', __DIR__.'/');
-
-        // $this->bootFilters();
     }
 
     /**
@@ -38,7 +36,6 @@ class OAuthClientServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
         $this->registerErrorHandlers();
         $this->registerCommands();
     }
@@ -68,24 +65,6 @@ class OAuthClientServiceProvider extends ServiceProvider
 
         //action 指令
         $this->commands('command.oauth-client.library_create','command.oauth-client.migrations','command.oauth-client:set-consumer');
-
-
-        // $this->app->bind('command.oauth-client.controller', 'Ithome\OAuthClient\Console\OAuthControllerCommand');
-        // $this->app->bind('command.oauth-client.migrations', 'Ithome\OAuthClient\Console\MigrationsCommand');
-        // $this->app->bind('command.oauth-client.client.create', 'Ithome\OAuthClient\Console\ClientCreatorCommand');
-
-        // $this->commands('command.oauth-client.controller', 'command.oauth-client.migrations', 'command.oauth-client.client.create');
-    }
-
-    /**
-     * Boot the filters
-     * @return void
-     */
-    private function bootFilters()
-    {
-        // $this->app['router']->filter('check-authorization-params', 'LucaDegasperi\OAuth2client\Filters\CheckAuthCodeRequestFilter');
-        // $this->app['router']->filter('oauth', 'LucaDegasperi\OAuth2client\Filters\OAuthFilter');
-        // $this->app['router']->filter('oauth-owner', 'LucaDegasperi\OAuth2client\Filters\OAuthOwnerFilter');
     }
 
     /**
