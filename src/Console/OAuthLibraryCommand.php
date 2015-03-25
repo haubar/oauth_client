@@ -47,19 +47,24 @@ class OAuthLibraryCommand extends Command
      */
     public function fire()
     {
-        $destination = $this->laravel['path'].'/../vender/lusitanian/oauth/src/OAuth/OAuth2/Service/ithome.php';
+        // $this->comment($this->laravel['path.base']);
+        $destination = $this->laravel['path.base'].'/vendor/lusitanian/oauth/src/OAuth/OAuth2/Service/ithome.php';
+        $origin = __DIR__.'/../subs/ithome.stub';
 
         if (!$this->files->exists($destination)) {
-            $this->files->copy(__DIR__.'/../subs/ithome.stub', $destination);
+            $this->files->copy($origin, $destination);
 
             $this->info('Ithome OAuth Client Library created successfully!');
 
-
-            $this->comment("KERKERKER......");
-            // $this->comment("Route::post('oauth/access_token', 'OAuthController@postAccessToken');");
+            $this->comment("Move file to ".$destination."......");
         }
         else {
             $this->error('Ithome OAuth Client Library already exists!');
         }
+
+        if (!$this->files->exists($origin)) {
+            $this->info('The Library not exists!');
+        }
+
     }
 }
