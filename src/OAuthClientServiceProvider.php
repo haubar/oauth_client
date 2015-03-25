@@ -9,17 +9,17 @@
 
 namespace Ithome\OAuthClient;
 
-// use Illuminate\Support\ServiceProvider;
-// use Ithome\OAuthClient\Console\ConsumerSettingCommand;
-// use Ithome\OAuthClient\Console\MigrationsCommand;
-// use Ithome\OAuthClient\Console\OAuthLibraryCommand;
+use Illuminate\Support\ServiceProvider;
+use Ithome\OAuthClient\Console\ConsumerSettingCommand;
+use Ithome\OAuthClient\Console\MigrationsCommand;
+use Ithome\OAuthClient\Console\OAuthLibraryCommand;
 
-class ServiceProvider extends \Illuminate\Support\ServiceProvider
+class OAuthClientServiceProvider extends ServiceProvider
 {
     /**
      * @var bool
      */
-    protected $defer = false;
+    protected $defer = true;
 
     /**
      * Bootstrap the application events.
