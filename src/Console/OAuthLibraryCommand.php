@@ -41,15 +41,15 @@ class OAuthLibraryCommand extends Command
     }
 
     /**
-     * Execute the console command.
+     * 將符合套件的ithome library檔案搬移至套件裡.
      *
      * @return void
      */
     public function fire()
     {
-        // $this->comment($this->laravel['path.base']);
+
         $destination = $this->laravel['path.base'].'/vendor/lusitanian/oauth/src/OAuth/OAuth2/Service/ithome.php';
-        $origin = __DIR__.'/../subs/ithome.stub';
+        $origin = __DIR__.'/../stubs/ithome.stubs';
 
         if (!$this->files->exists($destination)) {
             $this->files->copy($origin, $destination);

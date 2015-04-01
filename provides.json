@@ -1,7 +1,0 @@
-{
-    "providers": [
-    "Ithome\OAuthClient\OAuthClientServiceProvider"
-    ],
-    "aliases"  : [
-    ]
-}
