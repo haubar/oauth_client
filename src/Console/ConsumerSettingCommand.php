@@ -36,17 +36,10 @@ class ConsumerSettingCommand extends Command
      */
     public function fire()
     {
-
+        //安裝OAuth client 端Package
         $this->call('config:publish', ['package' => 'artdarek/oauth-4-laravel']);
         $this->call('dump-autoload');
         $this->info('The Base config be create !!');
-        // $clientId = $this->argument('clientid');
-        // $clientSecret = $this->argument('clientSecret');
-
-        // $this->clientRepo->create($clientId, $clientSecret);
-        // $this->info('Client created successfully');
-        // $this->info('Client ID: '.$clientId);
-        // $this->info('Client Secret: '.$clientSecret);
     }
 
     /**
@@ -55,7 +48,6 @@ class ConsumerSettingCommand extends Command
     public function getArguments()
     {
         return [
-
             ['clientId', InputArgument::OPTIONAL, 'Client ID to use.', Str::random()],
             ['clientSecret', InputArgument::OPTIONAL, 'Client Secret to use.', Str::random(32)]
         ];
