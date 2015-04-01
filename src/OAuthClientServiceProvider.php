@@ -61,10 +61,10 @@ class OAuthClientServiceProvider extends ServiceProvider
         //定義指令檔的動作
         $this->app->bind('command.oauth-client.library_create', 'Ithome\OAuthClient\Console\OAuthLibraryCommand');
         $this->app->bind('command.oauth-client.migrations', 'Ithome\OAuthClient\Console\MigrationsCommand');
-        $this->app->bind('command.oauth-client:set-consumer', 'Ithome\OAuthClient\Console\ConsumerSettingCommand');
+        $this->app->bind('command.oauth-client.set-consumer', 'Ithome\OAuthClient\Console\ConsumerSettingCommand');
 
         //action 指令
-        $this->commands('command.oauth-client.library_create','command.oauth-client.migrations','command.oauth-client:set-consumer');
+        $this->commands('command.oauth-client.library_create','command.oauth-client.migrations','command.oauth-client.set-consumer');
     }
 
     /**
