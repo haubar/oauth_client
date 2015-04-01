@@ -5,8 +5,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "haubar",
-            "email": "haubarclack@gmail.com"
+            "name": "Clark",
+            "email": "clark@mail.ithome.com.tw"
         }
     ],
     "repositories": [
@@ -20,11 +20,6 @@
         "artdarek/oauth-4-laravel": "*"
     },
     "autoload": {
-        "psr-4": {
-            "Ithome\\OAuthClient\\": "src/"
-        }
-    },
-    "autoload-dev": {
         "psr-4": {
             "Ithome\\OAuthClient\\": "src/"
         }
